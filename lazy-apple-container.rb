@@ -5,12 +5,12 @@
 class LazyAppleContainer < Formula
   desc "A simple terminal UI for Apple Container, written in Go"
   homepage "https://github.com/g-battaglia/lazy-apple-container/"
-  version "1.0.1"
+  version "1.0.2"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/g-battaglia/lazy-apple-container/releases/download/v1.0.1/lazy-apple-container_1.0.1_Darwin_arm64.tar.gz"
-    sha256 "93cbbdad150b7c137f9240ab6474d83861694009df23565189d9f9897ed975c2"
+    url "https://github.com/g-battaglia/lazy-apple-container/releases/download/v1.0.2/lazy-apple-container_1.0.2_Darwin_arm64.tar.gz"
+    sha256 "20571448f8efccaebe6ea00667f22dfdda3fe486da9badb4c81eed42f9e7de71"
 
     define_method(:install) do
       bin.install "lazyapple"
